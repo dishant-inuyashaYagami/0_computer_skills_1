@@ -1,0 +1,67 @@
+================================================================================
+INSTRUCTIONS:
+
+in Windows, use git bash, to use linux commands.
+================================================================================
+
+
+
+==================== GIT COMMANDS ===========================================================================================================
+
+Reference: youtube link: Learn Git In 15 Minutes (https://www.youtube.com/watch?v=USjZcfj8yxE&ab_channel=ColtSteele)
+
+level 1 commands: (must know at all times)
+git init                               # mark the beginning of tracking the project
+git add <file_name>                    # equivalent of p4 edit <file_name>
+git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number>  
+
+
+level 2 commands:
+git status                    # gives the staus of the stagged and unstagged files
+git log                       # gives the list of all commits 
+git branch                    # gives the list of branches
+git checkout <branch_name>    # takes you to the specified branch or changelist
+
+
+pre-setup commands:
+git config --global user.email "dishant.in@gmail.com"          # assigns the git to your account # git uses it for gitHub sync, I think
+
+=============================================================================================================================================
+
+
+
+
+
+
+==================== GITHUB COMMANDS =========================================================================================
+Reference: youtube link: "Learn Github in 20 Minutes" (https://www.youtube.com/watch?v=nhNq2kIvi9s&ab_channel=ColtSteele)
+
+level 1 commands: (must be known at all times)
+git push -u origin master             # push all the changes in the master branch to gitHub
+
+
+level 2 commnds:
+git pull origin master                # pulls all the changes in the origin to the master branch
+git remote -v                         # prints the gutHub link the git is connected to
+
+setup commands:
+git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRepo.git       # links the local git to gitHub; name "origin" is an alias to the URL.
+
+==============================================================================================================================
+
+
+
+
+
+
+
+
+
+==================== Perforce Commands =======================================================================================
+
+==============================================================================================================================
+
+
+
+
+

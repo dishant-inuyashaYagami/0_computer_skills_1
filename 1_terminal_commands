@@ -1,0 +1,60 @@
+Start Commands: 
+cntl+alt+t              # opens the terminal window in linux
+ls -sh                  # list the set of files/subdir of the current directory
+ls -ll                  # see the symbolic files linked with the acutal file names/path
+pwd                     # prints the path of the current working directory
+cd <dir_path>           # change directory to <dir_path>  
+cd -                    # moves to the previous working directory
+cd ..                   # moves to the parent directory
+cd ~                    # moves to the home directory 
+sudo <any_command>      # super user do (provides all the administrator privaledges)
+
+MR CRM: 
+Make   : mkdir <dir_name>
+Remove : rmdir <dir_name> or rm -rf <dir_name or file_name>
+Copy   : cp -rf <dir/file_name> <new_dir/file_name>
+Rename : mv <old_file_name> <new_file_name>
+Move   : mv <old_file_path> <new_file_path>
+
+ASS: 
+alias dishant "echo "cool kid""                # also used by hasi.. and chotu
+source TEST.setup                              # same as bash, except that the new terminal window is opened and commands are executed there instead of the parent terminal
+setenv <var_name> <var_value>                  # sets an environment variable of name <var_name> to value <var_value>
+
+GWECFO: 
+grep   -inr "<text>" <file_path>
+which  <command_name>
+echo   $<env_var_name>                         # prints the value of the envioronment variable if exists
+cat    <file_name>
+findf  <file_name>                             # findf is aliased to: find -L * -type f -iname
+findd  <dir_name>                              # findd is aliased to: find -L * -type d -iname
+echo   "<text>" > <file_name>                  # outstream operator ">"
+
+
+Kill Commands:
+cntl+C               # aborts a process
+cntl+z               # suspends a process
+kill -9 %%           # kill the last run process in the terminal
+ps -u                # list all the set of running processes
+kill -9 <pid>        # kills the process with process id <pid>
+killall5 -9          # kills all the processes
+lsof +D /path        # to see the list of open files
+
+
+Traverse Within Command:
+cntl+a                      # takes the cursur to the start of the command
+cntl+e                      # takes the cursor to the end of the command
+cntl+w                      # removes the command written
+up_arrow_key                # more latest command used
+down_arrow_key              # more older command used
+<tab>                       # always use tabs for autocompletion
+
+
+Bjobs Commands:
+bjobs                       # list all the set of submitted bjobs
+bkill <pid>                 # kills the bjob with pid <pid>
+bkill 0                     # kills all the bjobs spawned of self user
+
+
+Misc:
+du -sh <dir_path>               # disk space occupied by directory  
