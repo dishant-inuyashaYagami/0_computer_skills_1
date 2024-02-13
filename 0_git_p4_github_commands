@@ -29,11 +29,8 @@ git config --global user.email "dishant.in@gmail.com"          # assigns the git
 =============================================================================================================================================
 
 
-
-
-
-
 ==================== GITHUB COMMANDS =========================================================================================
+
 Reference: youtube link: "Learn Github in 20 Minutes" (https://www.youtube.com/watch?v=nhNq2kIvi9s&ab_channel=ColtSteele)
 
 level 1 commands: (must be known at all times)
@@ -52,12 +49,80 @@ git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRep
 
 
 
-
-
-
-
-
 ==================== Perforce Commands =======================================================================================
+
+Reference: [Kaushik, Divij, Raghav, Jitin]
+
+most basic commands:
+create client:   <see_your_organizations_command>
+syncing client:  p4 sync <build_id/changeList>
+edit file:       p4 edit <file_name>
+add description: p4 change
+commit:          p4 submit -c <changeListId>
+
+all set of commands:
+ ---- Level 1 (Creating): (summary: 111)
+	p4 edit <file_name>.
+	p4 change: create a change list.
+	p4 submit -c <change_list_number>: submit a change list.
+
+	p4 add <file_name>:    add the new file to change list.
+	p4 add <dir_name>/…: add the directory and all its coontents recursively to the change list.
+	To add the symbolic link files, use display and use reconcile work option on the folder [DIVIJ].
+
+
+ ---- Level 2 (Editing): (summary: 232)
+	p4 opened:  see the list of open files.
+	p4 diff <file_name>: see the diff of changes.
+	p4 annotate -c <file_name>: see the diff of changes. (use >> to save the results in a file if too big.)
+
+
+	p4 describe <change_list_number>: see files opened in  change list.
+	p4 change -u  <change_list_number>: update description of a change list.
+	p4 reopen -c <change_number> <file_name>: Move a file from one change list to other.
+	p4 changes -c your-client-name -s pending: view list of pending changes. (what is its use).
+	p4 filelog <file_name>: view the creation CL for the file.
+
+
+
+	p4 shelve -c <change_number>: Shelve change list (Use it to share code with someone without doing
+	                                                                                 commit to main branch)
+	p4 unshelve -s <change_number>. Unshelve change list (client must be the same).
+
+
+
+ ---- Level 3 (Reverting and Deleting): (summary: 311)
+	p4 revert <file_name>: revert changes to a file.
+	p4 revert //… : revert all changes.
+	Revert the change list that is shelved: go to p4v & and the go to appropriate workspace, and then
+                                                            right click on the appropriate <change-number> and delete it.
+
+	p4 change -d <change-number>: remove a pending change list.
+
+	p4 shelve -c 854762 -d: delete a shelved change list.
+	p4 unlock: unlocks all the files in the client.
+
+
+
+If run into problem of deleting clients, refer this: https://stackoverflow.com/questions/12296080/how-to-delete-a-perforce-client-with-pending-changelist
+
+
+Undoing changelist using gui: [Kaushik]
+	○ set up display using setenv DISPLAY sjcvl-dishantg:2 and do p4v &.
+	○ Select the workspace where you want to undo changes.
+	○ Go to view option, select the submitted changelists.
+	○ Go to the required changelist, right click and undo it.
+	○ Select sequences of "yes".. .
+	○ Go again to view options and select pending changelists. You will see that changelist opened and reverted in your local client.
+
+
+Check-in/submitting changes: p4 submit -c <change_list_number>. Do p4 resolve before submitting. 
+If unable to resolve, it means you have resolved it earlier. Re-resolve using p4 resolve -f.
+
+
+Integrating changes to different branch: p4 integ //hsv/ap_main/...@<CL#>,<CL#> //hsv/branch23h1/…
+Run this command in 23h1 to integrate the changes from main. Then p4 resolve to do actual change.
+
 
 ==============================================================================================================================
 

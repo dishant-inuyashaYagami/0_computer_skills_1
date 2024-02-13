@@ -1,0 +1,34 @@
+export VAR_NAME=true
+export VAR_NAME_2=100
+
+if [ $# -ne 1 ]
+  then
+    echo "Did not supply exactly one argument? No. So exiting..."
+    echo "The first argument takes the value: <num_of_trials>"
+    exit 0
+fi
+
+rm *.cmd
+rm -rf PREV_RESULTS xeCompile.log
+cp -f src_init/LSF_opt LSF_opt
+
+num=$1
+echo "Number of trails: "$1
+rm temp.qel
+echo "design" >> temp.qel 
+echo "compileFind ..." >> temp.qel
+xeCompile temp.qel
+
+num2=$(($num+1))
+for a  in {2..1000}
+do
+    # if a is equal to num_trials+1 break the loop
+    if [ $a == $num2 ]
+    then
+        break
+    fi
+    # Print the value
+    aneg=$(($a-1))
+    cp ITER_$a/tmp/test.$a.msg test$aneg.msg
+done
+

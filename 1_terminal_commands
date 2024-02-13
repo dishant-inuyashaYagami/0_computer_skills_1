@@ -21,14 +21,16 @@ alias dishant "echo "cool kid""                # also used by hasi.. and chotu
 source TEST.setup                              # same as bash, except that the new terminal window is opened and commands are executed there instead of the parent terminal
 setenv <var_name> <var_value>                  # sets an environment variable of name <var_name> to value <var_value>
 
-GWECFO: 
+GWECFOO: 
 grep   -inr "<text>" <file_path>
+grep -inr "PTMPP .* MAX_HOP" tmp/et3pass2.[1-5].msg   # greps with regEx on the <text> and <file_paths> both.
 which  <command_name>
-echo   $<env_var_name>                         # prints the value of the envioronment variable if exists
+echo   $<env_var_name>                                # prints the value of the envioronment variable if exists
 cat    <file_name>
-findf  <file_name>                             # findf is aliased to: find -L * -type f -iname
-findd  <dir_name>                              # findd is aliased to: find -L * -type d -iname
-echo   "<text>" > <file_name>                  # outstream operator ">"
+findf  <file_name>                                    # findf is aliased to: find -L * -type f -iname
+findd  <dir_name>                                     # findd is aliased to: find -L * -type d -iname
+echo   "<text>" > <file_name>                         # outstream operator ">". clean and write text <text> to the file <file_name>
+echo   "<text>" >> <file_name>                        # outstream operator ">>". appends the text <text> to the existing data in the file <file_name>
 
 
 Kill Commands:
