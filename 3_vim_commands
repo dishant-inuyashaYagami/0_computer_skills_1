@@ -1,0 +1,31 @@
+Commands Summary:
+
+1. Opening Vim:            vim <file_name>
+
+2. Navigating vim:
+                           :0                    (move to start)
+		           :<line_number>        (move to line numver <line_nummber>)
+		           shift+g               (move to the end)
+			   shift+upArrow         (page up)
+			   shift+downArrow       (page down)
+
+3. Insert Search Delete:
+                           press i and write anythings  (insert)
+			   /<text>                      (does case sensitive serach of <text> in the file)
+			   dd                           (deletes the line it is on)
+
+4. Copy Paste:          
+                           <number_of_lines> and yy     (copy/yank <number_of_lines> number of lines)
+			   p                            (pastes the yanked lines)
+
+5. Exit Vim:
+                           :q!      (quits without saving)
+			   :wq!     (saves and quits)
+
+
+
+
+================================== MISC ================================================
+
+1. unwraps the text in the vim:        :set nowrap
+                           
