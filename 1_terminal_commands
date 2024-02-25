@@ -18,7 +18,7 @@ Move   : mv <old_file_path> <new_file_path>
 
 ASS: 
 alias dishant "echo "cool kid""                # also used by hasi.. and chotu
-source TEST.setup                              # same as bash, except that the new terminal window is opened and commands are executed there instead of the parent terminal
+source TEST.setup                              # same as bash, but in bash a new terminal window is opened and commands are executed there instead of the parent terminal
 setenv <var_name> <var_value>                  # sets an environment variable of name <var_name> to value <var_value>
 
 GWECFOOC: 
