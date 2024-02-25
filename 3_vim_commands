@@ -12,6 +12,7 @@ Commands Summary:
 3. Insert Search Delete:
                            press i and write anythings  (insert)
 			   /<text>                      (does case sensitive serach of <text> in the file)
+			   /\c<text>                    (does case insensitive serach of <text> in the file)
 			   dd                           (deletes the line it is on)
 
 4. Copy Paste:          
@@ -28,4 +29,4 @@ Commands Summary:
 ================================== MISC ================================================
 
 1. unwraps the text in the vim:        :set nowrap
-                           
+2. jumps to the end of the line:       $                           
