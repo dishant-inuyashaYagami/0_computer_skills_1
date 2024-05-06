@@ -58,8 +58,12 @@ down_arrow_key              # more older command used
 
 Bjobs Commands:
 bjobs                       # list all the set of submitted bjobs
+bjobs -w                    # list the processes with their full names
 bkill <pid>                 # kills the bjob with pid <pid>
 bkill 0                     # kills all the bjobs spawned of self user
+bqueues                     # to see the list of all available queues
+bmod -sp 100 <jobId>        # increase the priority of the job
+bswitch <queueName> <jobId> # switch the job <jobId> to a new queue <queueName>
 
 
 Misc:
