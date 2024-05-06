@@ -63,6 +63,8 @@ bkill 0                     # kills all the bjobs spawned of self user
 
 
 Misc:
-du -sh <dir_path>                                          # disk space occupied by directory 
+du -sh <dir_path>                                          # disk space occupied by directory Example: "du -sh ." for current working directory
+du -sh *                                                   # disk space occupied by each subdirectory
+df -h .                                                    # available disk space of the system it is mounted on
 gzip -d file.gz                                            # unzips the file: "file.gz"
 edit -> preferences -> custom font -> <change the size>.   # changes terminal font
