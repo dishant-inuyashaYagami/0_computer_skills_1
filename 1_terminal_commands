@@ -29,8 +29,8 @@ echo   $<env_var_name>                                # prints the value of the 
 cat    <file_name>
 findf  <file_name>                                    # findf is aliased to: find -L * -type f -iname
 findd  <dir_name>                                     # findd is aliased to: find -L * -type d -iname
-echo   "<text>" >  <file_name>                        # outstream operator ">". clean and write text <text> to the file <file_name>
-echo   "<text>" >> <file_name>                        # outstream operator ">>". appends the text <text> to the existing data in the file <file_name>
+<command_name> >   <file_name>                        # outstream operator ">". clean and writes the output of the command <command_name> to the file <file_name>
+<command_name> >>  <file_name>                        # outstream operator ">>". Appends the output of the command <command_name> to the file <file_name>.
 chmod  777         <file_name>                        # chmod stands for "change mode". Do "ls -l", -rw-r--r-- stands for "rw-" permission for user
                                                         "r--" permissions for group, and "r--" permissions for outsider. This corresponds to "chmod 644 <file_name>"
 							"rwx" means read, write, and execute
