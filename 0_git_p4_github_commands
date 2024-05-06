@@ -5,7 +5,7 @@ in Windows, use git bash, to use linux commands.
 ================================================================================
 
 
-==================== GIT MAIN SUMMARY COMMANDS ==================================
+==================== GIT MAIN SUMMARY COMMANDS (like Perforce) ==================================
 
 1.  git init                               # mark the beginning of tracking the project
     git config --global user.email "dishant.in@gmail.com"                                  # assigns the git to your account # git uses it for gitHub sync, I think
