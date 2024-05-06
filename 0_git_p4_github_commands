@@ -9,11 +9,11 @@ in Windows, use git bash, to use linux commands.
 
 1.  git init                               # mark the beginning of tracking the project
     git config --global user.email "dishant.in@gmail.com"                                  # assigns the git to your account # git uses it for gitHub sync, I think
-    git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRepo.git  # links the local git to gitHub; name "origin" is an alias to the URL.
-2.  git pull origin master                 # pulls all the changes in the origin to the master branch
-3.  git add <file_name>                    # equivalent of p4 edit <file_name>
-4.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number>
-5.  git push -u origin master              # push all the changes in the master branch to gitHub 
+2.  git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRepo.git  # links the local git to gitHub; name "origin" is an alias to the URL.
+3.  git pull origin master                 # pulls all the changes in the origin to the master branch
+4.  git add <file_name>                    # equivalent of p4 edit <file_name>
+5.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number>
+6.  git push -u origin master              # push all the changes in the master branch to gitHub 
 
 
 
