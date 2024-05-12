@@ -45,6 +45,7 @@ ps -u                # list all the set of running processes
 kill -9 <pid>        # kills the process with process id <pid>
 killall5 -9          # kills all the processes
 lsof +D /path        # to see the list of open files
+fg                   # brings back the foreground process to he current linux shell
 
 
 Traverse Within Command:
