@@ -71,7 +71,7 @@ bswitch <queueName> <jobId> # switch the job <jobId> to a new queue <queueName>
 
 Misc:
 du -sh <dir_path>                                          # disk space occupied by directory Example: "du -sh ." for current working directory
-du -sh *                                                   # disk space occupied by each subdirectory
-df -h .                                                    # available disk space of the system it is mounted on
+du -sh *                                                   # lits "disk usage" by each subdirectory
+df -h .                                                    # available "disk free" of the system it is mounted on
 gzip -d file.gz                                            # unzips the file: "file.gz"
 edit -> preferences -> custom font -> <change the size>.   # changes terminal font
