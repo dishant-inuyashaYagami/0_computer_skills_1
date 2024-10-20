@@ -16,7 +16,7 @@ in Windows, use git bash, to use linux commands.
     git remote set-url origin <new_url>    # update git origin's URL, if wrongly set
 4.  git add <file_name>                    # equivalent of p4 edit <file_name>
 5.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number> or git commit -m <commit_message> <file_name> also works!
-6.  git push -u origin master              # push all the changes in the master branch to gitHub 
+6.  git push -u origin master              # push all the changes in the master branch to gitHub  (u means update)
 
 
 
