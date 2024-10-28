@@ -13,31 +13,31 @@ export VAR_NAME_2=100
 if [ $# -ne 1 ]
   then
     echo "Did not supply exactly one argument? No. So exiting..."
-    echo "The first argument takes the value: <num_of_trials>"
+    echo "The first argument takes the value: <num_of_tr***>"
     exit 0
 fi
 
 rm *.cmd
-rm -rf PREV_RESULTS xeCompile.log
-cp -f src_init/LSF_opt LSF_opt
+rm -rf P**V_R****S x*****e.log
+cp -f s*c_i**t/L*F_o*t L*F_o*t
 
 num=$1
-echo "Number of trails: "$1
+echo "Number of t***s: "$1
 rm temp.qel
-echo "design" >> temp.qel 
-echo "compileFind ..." >> temp.qel
-xeCompile temp.qel
+echo "d****n" >> temp.qel 
+echo "c****eF**d ..." >> temp.qel
+x*C****e temp.qel
 
 num2=$(($num+1))
 for a  in {2..1000}
 do
-    # if a is equal to num_trials+1 break the loop
+    # if a is equal to num_t***s+1 break the loop
     if [ $a == $num2 ]
     then
         break
     fi
     # Print the value
     aneg=$(($a-1))
-    cp ITER_$a/tmp/test.$a.msg test$aneg.msg
+    cp I**R_$a/t*p/test.$a.m*g test$aneg.m*g
 done
 
