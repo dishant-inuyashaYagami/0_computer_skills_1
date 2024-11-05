@@ -17,6 +17,8 @@ in Windows, use git bash, to use linux commands.
 4.  git add <file_name>                    # equivalent of p4 edit <file_name>
 5.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number> or git commit -m <commit_message> <file_name> also works!
 6.  git push -u origin master              # push all the changes in the master branch to gitHub  (u means update)
+    					   # refer to this: https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
+					     when you require credentials when using MAC terminal. Earlier I used this password: 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b (rm b please at the end)
 
 
 
