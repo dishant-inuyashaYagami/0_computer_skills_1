@@ -14,23 +14,25 @@ in Windows, use git bash, to use linux commands.
 2.  brew install gh       		   # installs github cli
     gh auth login                          # login to github # use the option of login from browser
     gh repo clone dishant-inuyashaYagami/0_computer_skills_1   # it sync all the code changes and all previous CLs data as well # could be slow
-    git checkout <only_cl>                 # it is typically fast
+    
+    or ---------------------------
 
-2.  git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRepo.git  # links the local git to gitHub; name "origin" is an alias to the URL.
-.  git pull origin master                 # pulls all the changes in the origin to the master branch (if you set htpps error: see this link: https://stackoverflow.com/ques
+    git remote add origin https://github.com/dishant-inuyashaYagami/myFirstGitHubRepo.git  # links the local git to gitHub; name "origin" is an alias to the URL.
+    git pull origin master                 # pulls all the changes in the origin to the master branch (if you set htpps error: see this link: https://stackoverflow.com/ques
                                              tions/53988638/git-fatal-protocol-https-is-not-supported)
     git remote set-url origin <new_url>    # update git origin's URL, if wrongly set
 
-or
+    or ---------------------------
 
-2. git clone https://github.com/dishant-inuyashaYagami/0_computer_skills_1.git
-   username: dishant-inuyashaYagami
-   password: <token/not-your-github-password/get_it_from_oneNote>
-   TO DO: try ssh authentication
+    git clone https://github.com/dishant-inuyashaYagami/0_computer_skills_1.git
+    username: dishant-inuyashaYagami
+    password: <token/not-your-github-password/get_it_from_oneNote>
+    TO DO: try ssh authentication
 
-3.  git add <file_name>                    # equivalent of p4 edit <file_name>
-4.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number> or git commit -m <commit_message> <file_name> also works!
-5.  git push -u origin master              # push all the changes in the master branch to gitHub  (u means update)
+3.  git checkout <only_cl>                 # it is typically fast # sync to the particulat CL like p4 sync
+4.  git add <file_name>                    # equivalent of p4 edit <file_name>
+5.  git commit -m <commit_message>         # equivalent of p4 change; p4 commit -c <changelist_number> or git commit -m <commit_message> <file_name> also works!
+6.  git push -u origin master              # push all the changes in the master branch to gitHub  (u means update)
     					   # refer to this: https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
 					     when you require credentials when using MAC terminal. Earlier I used this password: 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b (rm b please at the end)
 
